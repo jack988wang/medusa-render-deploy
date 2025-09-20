@@ -1,0 +1,94 @@
+{
+  "regions": [
+    {
+      "id": "reg_01",
+      "name": "World",
+      "currency_code": "usd",
+      "tax_rate": 0
+    }
+  ],
+  "countries": [
+    {
+      "id": "us",
+      "iso_2": "us",
+      "iso_3": "usa",
+      "num_code": 840,
+      "name": "United States",
+      "display_name": "United States",
+      "region_id": "reg_01"
+    }
+  ],
+  "currencies": [
+    {
+      "code": "usd",
+      "symbol": "$",
+      "symbol_native": "$",
+      "name": "US Dollar"
+    }
+  ],
+  "store": {
+    "id": "store_01",
+    "name": "Digital Store",
+    "default_currency_code": "usd",
+    "default_sales_channel_id": "sc_01",
+    "default_region_id": "reg_01",
+    "default_location_id": "loc_01"
+  },
+  "sales_channels": [
+    {
+      "id": "sc_01",
+      "name": "Default Channel",
+      "description": "Main sales channel"
+    }
+  ],
+  "stock_locations": [
+    {
+      "id": "loc_01",
+      "name": "Default Location",
+      "address": {
+        "address_1": "123 Digital St",
+        "city": "Digital City",
+        "country_code": "us",
+        "postal_code": "12345"
+      }
+    }
+  ],
+  "products": [
+    {
+      "id": "prod_01",
+      "title": "Digital Product 1",
+      "description": "A sample digital product",
+      "status": "published",
+      "type": {
+        "value": "digital"
+      },
+      "tags": [
+        {
+          "value": "digital"
+        }
+      ],
+      "variants": [
+        {
+          "id": "variant_01",
+          "title": "Default Variant",
+          "sku": "DIGITAL-001",
+          "manage_inventory": false,
+          "prices": [
+            {
+              "currency_code": "usd",
+              "amount": 999
+            }
+          ]
+        }
+      ],
+      "options": [],
+      "images": [],
+      "sales_channels": [
+        {
+          "id": "sc_01"
+        }
+      ]
+    }
+  ]
+}
+
